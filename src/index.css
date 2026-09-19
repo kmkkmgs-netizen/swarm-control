@@ -284,3 +284,64 @@ input[type='number'] {
   .main { padding: 18px 16px 96px; }
   .kv { grid-template-columns: 110px 1fr; }
 }
+
+/* ---------- 인트로 화면 ---------- */
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 20px;
+}
+
+.intro-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(22, 32, 43, 0.08);
+  padding: 40px 36px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.intro-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.intro-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.intro-brand h1 {
+  font-size: 24px;
+  letter-spacing: 0.08em;
+}
+
+.intro-credit {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.intro-btn {
+  margin-top: 8px;
+  padding: 11px 28px;
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+  font-weight: 600;
+}
+.intro-btn:hover { background: #202b38; }

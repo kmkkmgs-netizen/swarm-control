@@ -5,6 +5,7 @@ import { Robots } from './pages/Robots'
 import { Swarm } from './pages/Swarm'
 import { Events } from './pages/Events'
 import { Settings } from './pages/Settings'
+import { Intro } from './pages/Intro'
 
 type PageKey = 'dashboard' | 'robots' | 'swarm' | 'events' | 'settings'
 
@@ -17,8 +18,13 @@ const PAGES = [
 ] as const
 
 export default function App() {
+  const [entered, setEntered] = useState(false)
   const [page, setPage] = useState<PageKey>('dashboard')
   const current = PAGES.find((p) => p.key === page) ?? PAGES[0]
+
+  if (!entered) {
+    return <Intro onEnter={() => setEntered(true)} />
+  }
 
   return (
     <div className="app">
