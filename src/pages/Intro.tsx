@@ -11,7 +11,11 @@ export function Intro({ onEnter }: { onEnter: () => void }) {
           <h1>SWARM CONTROL</h1>
         </div>
 
-        <p className="intro-credit">김민지, 황규원 · 스웜 로봇 시뮬 앱</p>
+        <p className="intro-credit">
+          수원대학교
+          <br />
+          김민지, 황규원 · 스웜 로봇 시뮬 앱
+        </p>
 
         <button className="btn intro-btn" onClick={onEnter}>
           시작하기
